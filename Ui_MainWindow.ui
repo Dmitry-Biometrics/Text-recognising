@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1020</width>
+    <height>717</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PageMarker</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>ЛИНИИ</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tbMuLineUp">
+          <property name="toolTip">
+           <string>Переместить выделенные области в верхнюю линию</string>
+          </property>
+          <property name="text">
+           <string>up</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tbMuLineDown">
+          <property name="toolTip">
+           <string>Переместить выделенные области в нижнюю линию</string>
+          </property>
+          <property name="text">
+           <string>down</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tbExcludeBoxes">
+          <property name="toolTip">
+           <string>Исключить выделенные области</string>
+          </property>
+          <property name="text">
+           <string>excl</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tbLineNew">
+          <property name="toolTip">
+           <string>Добавить выделенные элементы в новую линию</string>
+          </property>
+          <property name="text">
+           <string>as new line</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tbLineDel">
+          <property name="toolTip">
+           <string>Удалить линию</string>
+          </property>
+          <property name="text">
+           <string>del line</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>БОКСЫ</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tb1b1c">
+          <property name="text">
+           <string>1b1c</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tb2b1c">
+          <property name="text">
+           <string>2b1c</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tb3b1c">
+          <property name="text">
+           <string>3b1c</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tb1b2c">
+          <property name="text">
+           <string>1b2c</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tb1b3c">
+          <property name="text">
+           <string>1b3c</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tb3b2c">
+          <property name="text">
+           <string>3b2c</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tb0b1c">
+          <property name="text">
+           <string>0b1c</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tb1b0c">
+          <property name="text">
+           <string>1b0c</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>box</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="edNBox">
+          <property name="value">
+           <number>2</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>char</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="edNChar">
+          <property name="value">
+           <number>2</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tbChange">
+          <property name="toolTip">
+           <string>Применить разметку к области</string>
+          </property>
+          <property name="text">
+           <string>change</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tbSplit">
+          <property name="toolTip">
+           <string>Отделить слева часть области (box,char)</string>
+          </property>
+          <property name="text">
+           <string>split</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tbUnite">
+          <property name="toolTip">
+           <string>Объединить box областей</string>
+          </property>
+          <property name="text">
+           <string>unite</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tbTrimUnused">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Удалить неиспользуемые области</string>
+          </property>
+          <property name="text">
+           <string>trimunused</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="6" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLineEdit" name="edLine">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tbLineUpdate">
+          <property name="text">
+           <string>upd</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tbLineSet">
+          <property name="text">
+           <string>=&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="tbEditText">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="text">
+           <string>текст</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>968</width>
+           <height>537</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="btnExtractLetters">
+          <property name="text">
+           <string>Сохранить символы</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnFindLetters">
+          <property name="text">
+           <string>Проверить символы</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Включить контур у букв</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="isExtended">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Рисунок исходный</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="cbDpiFrom">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <property name="currentIndex">
+           <number>4</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>72</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>100</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>150</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>200</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>300</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>400</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>600</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1200</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>конечный</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="cbDpiTo">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <property name="currentIndex">
+           <number>2</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>72</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>100</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>150</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>200</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>300</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>400</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>600</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1200</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>dpi</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1020</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <widget class="QMenu" name="menu_5">
+     <property name="title">
+      <string>Экспорт...</string>
+     </property>
+     <addaction name="actSaveImage"/>
+     <addaction name="actSaveBbox"/>
+     <addaction name="actSaveText"/>
+    </widget>
+    <widget class="QMenu" name="menu_6">
+     <property name="title">
+      <string>Импорт...</string>
+     </property>
+     <addaction name="actOpenBbox"/>
+     <addaction name="actOpenText"/>
+    </widget>
+    <widget class="QMenu" name="menu_7">
+     <property name="title">
+      <string>Обработать в каталоге</string>
+     </property>
+     <addaction name="actPathConvertMkpSmp"/>
+    </widget>
+    <addaction name="actOpenImage"/>
+    <addaction name="actOpenAndProcessImage"/>
+    <addaction name="actOpenMarkup"/>
+    <addaction name="menu_6"/>
+    <addaction name="separator"/>
+    <addaction name="actSaveMarkup"/>
+    <addaction name="actSaveSymbols"/>
+    <addaction name="actShowPageBase"/>
+    <addaction name="menu_7"/>
+    <addaction name="menu_5"/>
+    <addaction name="separator"/>
+    <addaction name="actExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Разметка</string>
+    </property>
+    <addaction name="actChange1b1c"/>
+    <addaction name="actChange2b1c"/>
+    <addaction name="actChange3b1c"/>
+    <addaction name="actChange1b2c"/>
+    <addaction name="actChange1b3c"/>
+    <addaction name="action_3"/>
+    <addaction name="action_box_char"/>
+    <addaction name="action_box_char_2"/>
+    <addaction name="separator"/>
+    <addaction name="actSkipBoxLine"/>
+    <addaction name="actSkipTextLine"/>
+    <addaction name="separator"/>
+    <addaction name="actMuLineUp"/>
+    <addaction name="actMuLineDown"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Линия</string>
+    </property>
+    <addaction name="actSelToUpLine"/>
+    <addaction name="actSelToDownLine"/>
+    <addaction name="actSelExclude"/>
+    <addaction name="actSelToNewLine"/>
+    <addaction name="actDelLine"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Текст</string>
+    </property>
+    <addaction name="actTextEdit"/>
+    <addaction name="actTextLineUpdate"/>
+    <addaction name="actTextLineSet"/>
+   </widget>
+   <widget class="QMenu" name="menu_8">
+    <property name="title">
+     <string>Распознавание</string>
+    </property>
+    <addaction name="actCheckHyp"/>
+    <addaction name="separator"/>
+    <addaction name="actBuildStatistics"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_8"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actOpenAndProcessImage">
+   <property name="text">
+    <string>Разметить</string>
+   </property>
+  </action>
+  <action name="actOpenText">
+   <property name="text">
+    <string>Текст...</string>
+   </property>
+  </action>
+  <action name="actOpenMarkup">
+   <property name="text">
+    <string>Загрузить разметку...</string>
+   </property>
+  </action>
+  <action name="actSaveImage">
+   <property name="text">
+    <string>Изображения</string>
+   </property>
+  </action>
+  <action name="actSaveBbox">
+   <property name="text">
+    <string>Областей букв</string>
+   </property>
+  </action>
+  <action name="actSaveText">
+   <property name="text">
+    <string>Текста</string>
+   </property>
+  </action>
+  <action name="actSaveMarkup">
+   <property name="text">
+    <string>Сохранить разметку</string>
+   </property>
+  </action>
+  <action name="actExit">
+   <property name="text">
+    <string>Выйти</string>
+   </property>
+  </action>
+  <action name="actChange1b1c">
+   <property name="text">
+    <string>1b1c</string>
+   </property>
+  </action>
+  <action name="actChange2b1c">
+   <property name="text">
+    <string>2b1c</string>
+   </property>
+  </action>
+  <action name="actChange3b1c">
+   <property name="text">
+    <string>3b1c</string>
+   </property>
+  </action>
+  <action name="actChange1b2c">
+   <property name="text">
+    <string>1b2c</string>
+   </property>
+  </action>
+  <action name="actChange1b3c">
+   <property name="text">
+    <string>1b3c</string>
+   </property>
+  </action>
+  <action name="actTextLineSet">
+   <property name="text">
+    <string>Установить строку и сбросить маркировку</string>
+   </property>
+  </action>
+  <action name="actTextLineUpdate">
+   <property name="text">
+    <string>Обновить строку</string>
+   </property>
+  </action>
+  <action name="actTextEdit">
+   <property name="text">
+    <string>Редактировать текст целиком...</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>Изменить регион (box,char)</string>
+   </property>
+  </action>
+  <action name="action_box_char">
+   <property name="text">
+    <string>Отделить регион (box,char)</string>
+   </property>
+  </action>
+  <action name="action_box_char_2">
+   <property name="text">
+    <string>Объединить регионы (mu)</string>
+   </property>
+  </action>
+  <action name="actShowPageBase">
+   <property name="text">
+    <string>Предпросмотр символов...</string>
+   </property>
+  </action>
+  <action name="actMarkupDefault">
+   <property name="text">
+    <string>Разметить по умолчанию...</string>
+   </property>
+  </action>
+  <action name="actOpenBbox">
+   <property name="text">
+    <string>Области букв...</string>
+   </property>
+  </action>
+  <action name="actSkipBoxLine">
+   <property name="text">
+    <string>Пропустить область</string>
+   </property>
+  </action>
+  <action name="actSkipTextLine">
+   <property name="text">
+    <string>Пропустить строку</string>
+   </property>
+  </action>
+  <action name="actOpenImage">
+   <property name="text">
+    <string>Открыть изображение...</string>
+   </property>
+  </action>
+  <action name="actMuLineUp">
+   <property name="text">
+    <string>Переместить регион вверх (box)</string>
+   </property>
+  </action>
+  <action name="actMuLineDown">
+   <property name="text">
+    <string>Переместить регион вниз (box)</string>
+   </property>
+  </action>
+  <action name="actSaveSymbols">
+   <property name="text">
+    <string>Сохранить символы</string>
+   </property>
+  </action>
+  <action name="actSelToUpLine">
+   <property name="text">
+    <string>Перенести в верхнюю линию</string>
+   </property>
+  </action>
+  <action name="actSelToDownLine">
+   <property name="text">
+    <string>Перенести в нижнюю линиию</string>
+   </property>
+  </action>
+  <action name="actSelExclude">
+   <property name="text">
+    <string>Исключить выделенное</string>
+   </property>
+  </action>
+  <action name="actSelToNewLine">
+   <property name="text">
+    <string>Перенести в новую линию</string>
+   </property>
+  </action>
+  <action name="actDelLine">
+   <property name="text">
+    <string>Удалить линию</string>
+   </property>
+  </action>
+  <action name="actPathConvertMkpSmp">
+   <property name="text">
+    <string>Извлечь и сохранить символы (mkp-&gt;smp)</string>
+   </property>
+  </action>
+  <action name="actCheckHyp">
+   <property name="text">
+    <string>Проверка гипотез</string>
+   </property>
+  </action>
+  <action name="actBuildStatistics">
+   <property name="text">
+    <string>Собрать статистику по разметке</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
